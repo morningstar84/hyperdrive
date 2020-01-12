@@ -1,0 +1,7 @@
+urllib3
+Flask==1.1.1
+dataclasses==0.6
+python_dateutil==2.8.1
+dependency_injector==3.14.12
+requests==2.22.0
+git+http://speciosus:123Stella123@github.comune.brescia.it/innovation-that-excites/logger_library.git

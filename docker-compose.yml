@@ -1,0 +1,21 @@
+version: '3.6'
+
+volumes:
+  volume_file:
+
+services:
+  hyperdrive_web:
+    hostname: "hyperdrive_web"
+    container_name: "hyperdrive_web"
+    environment:
+      FLASK_ENV: production
+      DEBUG: "False"
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    restart: always
+    volumes:
+      - volume_file:/log
+    command: ["python3", "app.py"]
+
